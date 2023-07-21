@@ -1,0 +1,110 @@
+<div
+  class="tab-pane fade"
+  id="add-item"
+  role="tabpanel"
+  aria-labelledby="profile-tab"
+>
+  <div class="card shadow mb-4 mt-2">
+    <div class="card-body">
+      <form action="/admin/item" method="POST" enctype="multipart/form-data">
+        <div class="form-group">
+          <label for="name">Title</label>
+          <input
+            type="text"
+            class="form-control"
+            name="title"
+            placeholder="Enter title"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Price</label>
+          <input
+            type="number"
+            class="form-control"
+            name="price"
+            placeholder="Enter price"
+            required
+          />
+        </div>
+        <div class="form-group">Before Discon
+          <input
+            type="number"
+            class="form-control"
+            name="discon"
+            placeholder="Enter price"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Kamar</label>
+          <input
+            type="number"
+            class="form-control"
+            name="kamar"
+            placeholder="Jumlah Kamar"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Tamu</label>
+          <input
+            type="number"
+            class="form-control"
+            name="tamu"
+            placeholder="Jumlah Tamu"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Kasur</label>
+          <input
+            type="text"
+            class="form-control"
+            name="bed"
+            placeholder="Enter Kasur"
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Sarapan</label><br>
+          <input 
+            style="width: 10px !important; display: inline-block !important;height: 10px !important;"
+            type="radio"
+            class="form-control"
+            name="sarapan"
+            value="true"
+            id="srpn1" 
+            required
+          />
+          <label for="srpn1" class="mr-4">Sarapan Gratis</label>
+          <input 
+            style="width: 10px !important; display: inline-block !important;height: 10px !important;"
+            type="radio"
+            class="form-control"
+            value="false"
+            name="sarapan"
+            id="srpn2" 
+            required
+          />
+          <label for="srpn2">Tanpa Sarapan</label>
+        </div>
+        <div class="form-group">
+          <label for="name">Image</label>
+          <input
+            type="file"
+            class="form-control"
+            name="image"
+            multiple
+            required
+          />
+        </div>
+        <div class="form-group">
+          <label for="name">Description</label>
+          <textarea name="about" class="form-control"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Save</button>
+      </form>
+    </div>
+  </div>
+</div>
